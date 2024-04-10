@@ -22,7 +22,7 @@ export const Select = ({
 }: SelectProps) => {
   return (
     <SelectPrimitive.Root {...props}>
-      <SelectPrimitive.Trigger className="flex h-11 w-full items-center justify-between gap-2 rounded-lg border border-zinc-300 px-3 py-2 shadow-sm data-[placeholder]:text-zinc-600">
+      <SelectPrimitive.Trigger className="flex h-11 w-full items-center justify-between gap-2 rounded-lg border border-zinc-300 px-3 py-2 shadow-sm outline-none focus:border-violet-300 focus:ring-4 focus:ring-violet-100 data-[state=open]:border-violet-300 data-[placeholder]:text-zinc-600 data-[state=open]:ring-4 data-[state=open]:ring-violet-100">
         {template === 'default' ? (
           <SelectPrimitive.Value
             placeholder={placeholder}
@@ -52,7 +52,7 @@ export const Select = ({
           side="bottom"
           position="popper"
           sideOffset={8}
-          className="z-10 w-[--radix-select-trigger-width] overflow-hidden rounded-lg border border-e-zinc-200 bg-white"
+          className="animate-slideDownAndFade z-10 w-[--radix-select-trigger-width] overflow-hidden rounded-lg border border-e-zinc-200 bg-white"
         >
           <SelectPrimitive.Viewport className="max-h-48 overflow-y-scroll">
             {children}
