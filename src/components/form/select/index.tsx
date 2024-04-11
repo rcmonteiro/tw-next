@@ -52,7 +52,7 @@ export const Select = ({
           side="bottom"
           position="popper"
           sideOffset={8}
-          className="animate-slideDownAndFade z-10 w-[--radix-select-trigger-width] overflow-hidden rounded-lg border border-e-zinc-200 bg-white"
+          className="animate-slideUpAndFade group z-10 w-[var(--radix-select-trigger-width)] overflow-hidden rounded-lg border border-zinc-200 bg-white will-change-[opacity,transform] dark:border-zinc-700 dark:bg-zinc-800"
         >
           <SelectPrimitive.Viewport className="max-h-48 overflow-y-scroll">
             {children}

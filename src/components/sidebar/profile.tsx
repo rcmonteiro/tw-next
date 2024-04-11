@@ -13,10 +13,10 @@ export const Profile = () => {
         alt=""
       />
       <div className="flex flex-1 flex-col overflow-hidden">
-        <span className="text-sm font-semibold text-zinc-700">
+        <span className="text-sm font-semibold text-zinc-700 dark:text-zinc-100">
           Ricardo Monteiro
         </span>
-        <span className="truncate text-sm text-zinc-500">
+        <span className="truncate text-sm text-zinc-500 dark:text-zinc-400">
           rcmonteiro@gmail.com
         </span>
       </div>
