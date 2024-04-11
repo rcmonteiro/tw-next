@@ -19,6 +19,7 @@ import { Button } from '../button'
 import { Logo } from './logo'
 import { NavItem } from './nav-item'
 import { Profile } from './profile'
+import { SwitchTheme } from './switch-theme'
 import { UsedSpace } from './used-space'
 
 export const Sidebar = () => {
@@ -64,6 +65,7 @@ export const Sidebar = () => {
           <div className="h-px bg-zinc-200 dark:bg-zinc-700" />
 
           <Profile />
+          <SwitchTheme />
         </div>
       </Collapsible.Content>
     </Collapsible.Root>
