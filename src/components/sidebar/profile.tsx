@@ -1,9 +1,10 @@
 import { LogOut } from 'lucide-react'
 import Image from 'next/image'
+import { Button } from '../button'
 
 export const Profile = () => {
   return (
-    <div className="grid-cols-profile grid items-center gap-3">
+    <div className="grid grid-cols-profile items-center gap-3">
       <Image
         src="https://github.com/rcmonteiro.png"
         className="size-10 rounded-full"
@@ -19,9 +20,9 @@ export const Profile = () => {
           rcmonteiro@gmail.com
         </span>
       </div>
-      <button type="button" className="ml-auto rounded-md p-2 hover:bg-zinc-50">
+      <Button type="button" variant="ghost">
         <LogOut className="size-5 text-zinc-500" />
-      </button>
+      </Button>
     </div>
   )
 }
